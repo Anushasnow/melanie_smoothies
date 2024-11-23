@@ -32,7 +32,7 @@ if ingredients_list:
 
     for fruit_chosen in ingredients_list:
           ingredients_string += fruit_chosen + ' '
-          fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+          fruityvice_response = requests.get("https://smoothiefruit.com/api/fruit/watermelon")
           fv_df=st.dataframe(data=fruityvice_response.json(),use_container_width=True) 
     
 #st.write(ingredients_string)
@@ -53,6 +53,6 @@ if Time_to_insert:
 
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://smoothiefruit.com/api/fruit/watermelon")
 #st.text(fruityvice_response)
 fv_df=st.dataframe(data=fruityvice_response.json(),use_container_width=True)
